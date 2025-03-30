@@ -23,10 +23,11 @@
     }
 
     .chart-block {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
+  flex: none;            /* prevent it from stretching */
+  height: 48vh;          /* adjust this height as needed */
+  display: flex;
+  flex-direction: column;
+}
 
     h3 {
       text-align: center;
@@ -36,10 +37,11 @@
     }
 
     iframe {
-      border: none;
-      flex: 1;
-      width: 100%;
-    }
+  border: none;
+  flex: none;
+  height: 90%;           /* only use part of the block height */
+  width: 100%;
+}
     .caption {
     text-align: center;
     font-size: 18px;
